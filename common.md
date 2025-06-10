@@ -434,7 +434,8 @@ flowchart TB
 2. **Break-Glass Access for Emergencies**
    - Create emergency IAM roles in the backup account with restore permissions
    - Implement strict role assumption conditions:
-     ```json
+     
+ ```json
      {
        "Version": "2012-10-17",
        "Statement": [
@@ -456,7 +457,8 @@ flowchart TB
          }
        ]
      }
-     ```
+ ```
+
    - Require multi-person approval for emergency access
    - Log and alert on all emergency role assumptions
 
