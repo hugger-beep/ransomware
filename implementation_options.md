@@ -47,6 +47,8 @@
    - Provides both disaster recovery and high availability
    - Can be used as part of a ransomware recovery strategy
 
+
+
 #### Best Practices for Multi-Region, Multi-Account Backups
 
 1. **Defense in Depth**
@@ -96,6 +98,9 @@ flowchart TB
     LocalBackup -- "Primary Recovery Path" --> ProdRoles
 ```
 
+
+
+
 #### IDC-Based Access Control Strategy
 
 1. **Normal Operations: Read-Only Access**
@@ -133,8 +138,12 @@ flowchart TB
      }
  ```
 
+
+
    - Require multi-person approval for emergency access
    - Log and alert on all emergency role assumptions
+
+
 
 #### Resilience Against IDC Failure
 
@@ -182,7 +191,8 @@ To ensure recovery capabilities even if IAM Identity Center fails:
    - Validate restoration capabilities from both local and remote backups
    - Simulate IDC failure scenarios to ensure resilience
 
-### Complementary RDS Backup Strategiesccount and 
+### Complementary RDS Backup Strategies 
+``` mermaid 
   cross-region copy targets
 • Simpler management"]
         
@@ -197,6 +207,7 @@ To ensure recovery capabilities even if IAM Identity Center fails:
 • Service-native but less centralized"]
     end
 ```
+
 
 #### Backup Strategy Implementation Options
 
