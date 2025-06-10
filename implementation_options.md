@@ -69,6 +69,7 @@
 ### Secure Access Control for Backup Accounts
 
 ```mermaid
+
 flowchart TB
     subgraph "Production Account"
         ProdUsers[Production Users]
@@ -192,7 +193,7 @@ To ensure recovery capabilities even if IAM Identity Center fails:
    - Simulate IDC failure scenarios to ensure resilience
 
 ### Complementary RDS Backup Strategies 
-``` mermaid 
+``` text 
   cross-region copy targets
 • Simpler management"]
         
