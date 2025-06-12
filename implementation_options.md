@@ -192,8 +192,13 @@ To ensure recovery capabilities even if IAM Identity Center fails:
    - Validate restoration capabilities from both local and remote backups
    - Simulate IDC failure scenarios to ensure resilience
 
-### Complementary RDS Backup Strategies 
-``` text 
+### Multi-Region Backup Strategy Options
+
+```mermaid
+flowchart TB
+    subgraph "Backup Strategy Options"
+        O1[Option 1: Single Plan] --> O1D["• One backup plan in production account
+• Multiple cross-account and 
   cross-region copy targets
 • Simpler management"]
         
