@@ -331,34 +331,6 @@ Using both RDS automated backups and AWS Backup provides a comprehensive defense
    - Implement GuardDuty for threat detection
    - Set up CloudWatch anomaly detection for backup patterns
 
-## Retail Industry AWS Recovery Case Studies
-
-### Case Study 1: Major Department Store Chain on AWS
-- **Scenario**: EC2-hosted POS system encryption during holiday season
-- **AWS Recovery Approach**: 
-  - Deployed EC2 Auto Scaling group with clean AMIs
-  - Used AWS Systems Manager for coordinated recovery
-  - Restored RDS databases from automated backups
-- **Outcome**: Restored operations within 6 hours with minimal sales impact
-- **Key Lesson**: Importance of regularly updated AMIs and automated deployment
-
-### Case Study 2: Online Retailer Data Ransom on AWS
-- **Scenario**: S3 bucket encryption and DynamoDB table deletion
-- **AWS Recovery Approach**: 
-  - Restored from S3 Versioning and DynamoDB backups
-  - Used AWS CloudTrail to identify compromised credentials
-  - Implemented stricter S3 bucket policies and SCPs
-- **Outcome**: Recovered customer data without paying ransom
-- **Key Lesson**: Value of S3 Versioning and cross-region backups
-
-### Case Study 3: Retail Supply Chain Attack on AWS
-- **Scenario**: Aurora database compromise affecting inventory systems
-- **AWS Recovery Approach**: 
-  - Used Aurora backtrack to quickly restore database state
-  - Implemented Aurora Global Database for cross-region resilience
-  - Deployed enhanced VPC security groups and NACLs
-- **Outcome**: Minimized business impact through rapid database recovery
-- **Key Lesson**: Importance of database-specific recovery features in AWS
 
 ## AWS-Specific Ransomware Prevention Measures
 
