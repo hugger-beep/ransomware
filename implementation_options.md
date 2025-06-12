@@ -276,6 +276,7 @@ To ensure recovery capabilities even if IAM Identity Center fails:
    - Validate data integrity after restoration
    - Practice recovery scenarios using backup copies
 
+
 ### Complementary RDS Backup Strategies
 
 Using both RDS automated backups and AWS Backup provides a comprehensive defense-in-depth approach:
